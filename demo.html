@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Live Demo Booking | ILT</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+background:#0f172a;
+}
+</style>
+
+</head>
+
+<body class="flex items-center justify-center min-h-screen px-6">
+
+
+<div class="max-w-2xl w-full">
+
+<div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-10">
+
+<h1 class="text-3xl font-bold text-white text-center mb-8">
+Book a Live Machine Demo
+</h1>
+
+<div id="errorMessage" class="hidden text-red-400 text-center mb-4 font-semibold">
+⚠ Please fill all required fields before submitting.
+</div>
+
+<div id="successMessage" class="hidden text-green-400 text-center mb-4 font-semibold">
+✅ Thank you! Your request has been submitted. Our team will contact you soon.
+</div>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+<form 
+action="https://docs.google.com/forms/d/e/1FAIpQLSeDf1hlOOOvtCMNYaRQ4rzdF9urgGSIwJccRQRcryWJhNCaJQ/formResponse"
+method="POST"
+target="hidden_iframe"
+onsubmit="return validateForm()"
+class="space-y-6">
+
+
+<div>
+<label class="text-gray-300 block mb-2">Name</label>
+
+<input 
+name="entry.101371261"
+type="text"
+required
+placeholder="Enter your name"
+class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 outline-none">
+</div>
+
+
+<div>
+<label class="text-gray-300 block mb-2">Email</label>
+
+<input 
+name="entry.1386177059"
+type="email"
+required
+placeholder="Enter your email"
+class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 outline-none">
+</div>
+
+
+<div>
+<label class="text-gray-300 block mb-2">Phone</label>
+
+<input 
+name="entry.1618522763"
+type="tel"
+placeholder="Enter your phone number"
+class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 outline-none">
+</div>
+
+
+<div>
+<label class="text-gray-300 block mb-2">Requirement</label>
+
+<textarea
+name="entry.1844555332"
+rows="4"
+required
+placeholder="Tell us about your cutting requirements..."
+class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 outline-none">
+</textarea>
+</div>
+
+
+<button
+type="submit"
+class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition shadow-lg">
+
+Request Live Demo
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script>
+
+function validateForm(){
+
+const name = document.querySelector('input[type="text"]').value;
+const email = document.querySelector('input[type="email"]').value;
+const phone = document.querySelector('input[type="tel"]').value;
+const requirement = document.querySelector('textarea').value;
+
+if(!name || !email || !phone || !requirement){
+
+document.getElementById("errorMessage").classList.remove("hidden");
+
+setTimeout(function(){
+document.getElementById("errorMessage").classList.add("hidden");
+},3000);
+
+return false;
+
+}
+
+document.getElementById("successMessage").classList.remove("hidden");
+
+setTimeout(function(){
+document.querySelector("form").reset();
+},500);
+
+return true;
+
+}
+
+</script>
+
+</body>
+</html>

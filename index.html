@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Indian Laser Technik | Industrial Laser Machines</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+/* Apple style typography */
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",
+"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:#0f0f0f;
+color:#e5e5e5;
+}
+
+/* smooth scroll */
+
+html{
+scroll-behavior:smooth;
+}
+
+/* glassmorphism */
+
+.glass{
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.15);
+}
+
+/* hover animation */
+
+.machine-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<header class="fixed w-full top-0 z-50 glass">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+<div class="flex items-center gap-3">
+
+<img src="D:\ILT landing page\images\logo.png" class="h-12">
+
+<div>
+<h1 class="font-semibold text-lg text-white">
+INDIAN LASER TECHNIK (I L T)
+</h1>
+<p class="text-xs text-gray-400">
+Precision With Every Beam
+</p>
+</div>
+
+</div>
+
+<nav class="hidden md:flex gap-8 text-lg text-gray-300">
+
+<a href="#about">About</a>
+<a href="#machines">Machines</a>
+<a href="#brands">Brands</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+
+<!-- HERO IMAGE SLIDER -->
+
+<section class="relative h-screen overflow-hidden">
+
+<div id="slider" class="flex h-full transition-transform duration-500">
+
+<img src="images/hero1.png"
+class="w-full h-full object-cover flex-shrink-0">
+
+<img src="images/hero2.png"
+class="w-full h-full object-cover flex-shrink-0">
+
+<img src="images/hero3.png"
+class="w-full h-full object-cover flex-shrink-0">
+
+</div>
+
+<!-- Left Button -->
+<button onclick="prevSlide()"
+class="absolute left-6 top-1/2 -translate-y-1/2 bg-black/40 text-white px-4 py-3 rounded-full">
+
+❮
+
+</button>
+
+<!-- Right Button -->
+<button onclick="nextSlide()"
+class="absolute right-6 top-1/2 -translate-y-1/2 bg-black/40 text-white px-4 py-3 rounded-full">
+
+❯
+
+</button>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="py-24">
+
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-semibold mb-6 text-white">
+About INDIAN LASER TECHNIK (I L T)
+</h2>
+
+<p class=" text-lg text-gray-400 leading-relaxed">
+
+<p>Established in 2018, Indian Laser Technik (ILT) specializes in the manufacturing of the sheet and tubes  Fiber Laser Cutting Machines.</p> 
+<p>The company also provides CNC Press Brake Machines and a wide range of laser consumables.</p> 
+Under the leadership of <b>Mr. Mahesh Bhimrao Katkar</b>, ILT has built a strong reputation for delivering high-precision machines, reliable solutions, 
+and excellent service while maintaining strong ethical business practices.
+
+
+</p>
+
+</div>
+
+</section>
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 py-16">
+
+  <!-- CARD -->
+  <div class="group relative rounded-2xl overflow-hidden backdrop-blur-lg bg-white/10 border border-white/20 shadow-xl transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+    <!-- Glow Border -->
+    <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+    bg-gradient-to-r from-blue-500 via-green-400 to-blue-500 blur-xl"></div>
+
+    <div class="relative z-10">
+
+      <!-- Image -->
+      <img src="D:\ILT landing page\images\remote demo.png" class="w-full h-48 object-cover">
+
+      <div class="p-6 flex flex-col justify-between h-64">
+
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-3">
+            Live Remote Demo
+          </h3>
+
+          <p class="text-gray-200 text-sm mb-6">
+            High-intent buyers want to see the machine running. Join a
+            15-minute Zoom session where we cut a file you provide live.
+          </p>
+        </div>
+
+        <a href="file:///D:/ILT%20landing%20page/demo.html"
+        class="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-center font-medium transition">
+        Book Demo
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- CARD -->
+  <div class="group relative rounded-2xl overflow-hidden backdrop-blur-lg bg-white/10 border border-white/20 shadow-xl transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+    <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+    bg-gradient-to-r from-green-500 via-emerald-400 to-green-500 blur-xl"></div>
+
+    <div class="relative z-10">
+
+      <img src="D:\ILT landing page\images\tour.png" class="w-full h-48 object-cover">
+
+      <div class="p-6 flex flex-col justify-between h-64">
+
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-3">
+            Virtual Factory Tour
+          </h3>
+
+          <p class="text-gray-200 text-sm mb-6">
+            See our manufacturing facility and assembly line. This builds
+            trust compared to traders who simply import machines.
+          </p>
+        </div>
+
+        <a href="#factory-tour"
+        class="bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg text-center font-medium transition">
+        View Factory
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- CARD -->
+  <div class="group relative rounded-2xl overflow-hidden backdrop-blur-lg bg-white/10 border border-white/20 shadow-xl transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+    <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+    bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 blur-xl"></div>
+
+    <div class="relative z-10">
+
+      <img src="D:\ILT landing page\images\roi.png" class="w-full h-48 object-cover">
+
+      <div class="p-6 flex flex-col justify-between h-64">
+
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-3">
+            ROI Consultation
+          </h3>
+
+          <p class="text-gray-200 text-sm mb-6">
+            Book a free 30-minute call with our engineer to discuss your
+            production bottlenecks and automation ROI.
+          </p>
+        </div>
+
+<a href="https://wa.me/917350251680?text=Hello%20I%20would%20like%20to%20book%20an%20ROI%20consultation"
+target="_blank"
+class="bg-orange-600 hover:bg-orange-700 text-white py-2 rounded-lg text-center font-medium transition">
+Schedule Call
+</a>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- MACHINES -->
+
+<section id="machines" class="py-24 bg-black">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-4xl font-semibold text-center mb-16 text-white">
+Our Machines
+</h2>
+
+
+<div class="grid md:grid-cols-2 gap-12">
+
+
+
+<div class="glass rounded-3xl overflow-hidden machine-card">
+
+<img src="D:\ILT landing page\images\single table.jpg" class="w-full h-80 object-cover">
+
+<div class="p-8">
+
+<h3 class="text-2xl font-semibold mb-3 text-white">
+Fiber Laser Cutting Machine
+</h3>
+
+<p class="text-gray-400 mb-6">
+High precision cutting of metal sheets using advanced fiber laser technology.
+</p>
+
+<a href="machine.html"
+class="absolute bottom-2 right-2 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-medium transition">
+View Details
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="glass rounded-3xl overflow-hidden machine-card">
+
+<img src="D:\ILT landing page\images\double table.png" class="w-full h-64 object-cover">
+
+<div class="p-8">
+
+<h3 class="text-2xl font-semibold mb-3 text-white">
+Full Body Pallet Changer
+</h3>
+
+<p class="text-gray-400">
+Automatic pallet loading and unloading system for higher productivity.
+</p>
+
+<a href="machine.html"
+class="absolute bottom-2 right-2 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-medium transition">
+View Details
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="glass rounded-3xl overflow-hidden machine-card">
+
+<img src="D:\ILT landing page\images\press break.png" class="w-full h-64 object-cover">
+
+<div class="p-8">
+
+<h3 class="text-2xl font-semibold mb-3 text-white">
+CNC Hydraulic Press Brake
+</h3>
+
+<p class="text-gray-400">
+Precision sheet metal bending machine<br> 
+using CNC hydraulic technology.
+</p>
+
+<a href="machine.html"
+class="absolute bottom-2 right-2 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-medium transition">
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="glass rounded-3xl overflow-hidden machine-card">
+
+<img src="D:\ILT landing page\images\tube cutting.jpg" class="w-full h-64 object-cover">
+
+<div class="p-8">
+
+<h3 class="text-2xl font-semibold mb-3 text-white">
+Tube Fiber Laser Cutting Machine
+</h3>
+
+<p class="text-gray-400">
+High precision cutting solution for metal tubes and pipes.
+</p>
+
+<a href="machine.html"
+class="absolute bottom-2 right-2 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-medium transition">
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LASER PRODUCTS / CONSUMABLES -->
+
+<section id="products" class="py-24 bg-[#0b0b0b]">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-4xl font-semibold text-center mb-16 text-white">
+Laser Consumables
+</h2>
+
+
+<div class="grid md:grid-cols-4 gap-10">
+
+<!-- PRODUCT 1 -->
+<div class="bg-white/5 backdrop-blur-lg rounded-3xl overflow-hidden 
+shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+
+<img src="images/laser head.png" class="w-full h-56 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold text-white mb-2">
+Laser Cutting Heads
+</h3>
+
+<p class="text-gray-400 text-sm">
+High precision laser heads including BOCI, Raytool and Precitec
+for advanced fiber laser cutting machines.
+</p>
+
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="bg-white/5 backdrop-blur-lg rounded-3xl overflow-hidden 
+shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+
+<img src="images/source.png" class="w-full h-56 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold text-white mb-2">
+Laser Sources
+</h3>
+
+<p class="text-gray-400 text-sm">
+Reliable laser sources from MAX, Raycus and IPG ensuring stable
+performance and high cutting quality.
+</p>
+
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="bg-white/5 backdrop-blur-lg rounded-3xl overflow-hidden 
+shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+
+<img src="images/control.png" class="w-full h-56 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold text-white mb-2">
+Laser Control Systems
+</h3>
+
+<p class="text-gray-400 text-sm">
+Advanced control systems such as CypCut and Raytool
+for precise and efficient machine operation.
+</p>
+
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="bg-white/5 backdrop-blur-lg rounded-3xl overflow-hidden 
+shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+
+<img src="D:\ILT landing page\images\lenses.png" class="w-full h-56 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold text-white mb-2">
+Laser Lenses
+</h3>
+
+<p class="text-gray-400 text-sm">
+High-quality laser lenses from Boshe, Raytools, Precitec, WSX and Ospri
+for precise beam focusing and consistent cutting performance.
+</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- CEO SECTION --> 
+<section class="py-16 bg-orange-300"> <div class="max-w-7xl mx-auto px-6"> <div class="grid md:grid-cols-2 gap-10 items-center"> 
+<!-- CEO IMAGE --> 
+<div class="flex justify-center"> 
+<img src="D:\ILT landing page\images\ceo.png" alt="Mr Mahesh Bhimrao Katkar - CEO" class="rounded-2xl shadow-lg w-80 object-cover"> 
+</div> 
+<!-- CEO CONTENT --> 
+ <div> <h2 class="text-3xl font-bold text-gray-800 mb-4"> Our Leadership </h2> <h3 class="text-xl font-semibold text-red-600 mb-3"> Mr. Mahesh Bhimrao Katkar </h3> <p class="text-gray-600 leading-relaxed mb-6"> Founder & CEO of Indian Laser Technik (ILT). With years of experience in industrial machinery and laser technology, he has led ILT to become a trusted manufacturer of sheet and tubes Fiber Laser Cutting Machines, CNC Press Brake machines and Laser Consumables. His vision focuses on innovation, precision engineering and delivering reliable solutions to industries across India. </p> <!-- BUTTON --> <a href="https://www.indianlasertechnik.co.in/" target="_blank" class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition"> Visit Company Website </a> </div> </div> </div> </section>
+
+
+
+<!-- BROCHURE -->
+
+<section class="py-24 text-center">
+
+<div class="glass max-w-xl mx-auto p-10 rounded-3xl">
+
+<h2 class="text-3xl font-semibold mb-6 text-white">
+Download Product Brochure
+</h2>
+
+<a
+href="file:///D:/ILT%20landing%20page/brochure/Indian%20laser%20technik.pdf"
+class="bg-orange-500 px-8 py-3 rounded-full text-white">
+
+Download Brochure
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT / GOOGLE FORM -->
+
+<section id="contact" class="py-20 bg-orange-500 text-white">
+
+<div class="max-w-4xl mx-auto px-6 text-center">
+
+<h2 class="text-3xl font-bold mb-6">
+Send Enquiry
+</h2>
+
+<p class="mb-8">
+Fill the form below and our team will contact you.
+</p>
+
+
+
+<form
+action="https://docs.google.com/forms/d/e/1FAIpQLSf4ufZ8Gb-ynjy0ebVV1s0tcIOTrq497viaQO6YprNQ68moVg/formResponse"
+method="POST"
+target="hidden_iframe"
+onsubmit="submitted=true"
+class="grid md:grid-cols-2 gap-6">
+
+<input
+name="entry.138683331"
+type="text"
+placeholder="Your Name"
+class="p-3 rounded text-black"
+required>
+
+<input
+name="entry.1960952540"
+type="email"
+placeholder="Email"
+class="p-3 rounded text-black"
+required>
+
+<input
+name="entry.936521191"
+type="text"
+placeholder="Phone"
+class="p-3 rounded text-black md:col-span-2">
+
+<textarea
+name="entry.1896924528"
+rows="4"
+placeholder="Your Requirement"
+class="p-3 rounded text-black md:col-span-2">
+</textarea>
+
+<button
+type="submit"
+class="bg-gray-900 py-3 rounded md:col-span-2 hover:bg-black">
+
+Submit Enquiry
+
+</button>
+
+</form>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+</div>
+
+</section>
+
+
+<!-- WHATSAPP -->
+
+<a
+href="https://wa.me/917350251680"
+target="_blank"
+class="fixed bottom-8 right-8 bg-green-500/80 backdrop-blur-md text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition hover:scale-110">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+width="32"
+height="32"
+viewBox="0 0 24 24"
+fill="white">
+
+<path d="M12.04 2C6.58 2 2.16 6.42 2.16 11.88c0 1.88.5 3.7 1.46 5.29L2 22l4.97-1.6a9.83 9.83 0 005.07 1.38c5.46 0 9.88-4.42 9.88-9.88S17.5 2 12.04 2zm0 17.9c-1.63 0-3.23-.44-4.63-1.27l-.33-.2-2.95.95.96-2.87-.21-.35a7.82 7.82 0 01-1.2-4.18c0-4.32 3.52-7.84 7.86-7.84 4.33 0 7.85 3.52 7.85 7.85 0 4.33-3.52 7.85-7.85 7.85zm4.3-5.8c-.23-.12-1.35-.67-1.56-.74-.21-.08-.36-.12-.51.12s-.59.74-.72.9c-.13.16-.26.18-.49.06-.23-.12-.98-.36-1.86-1.15-.69-.61-1.16-1.37-1.29-1.6-.13-.23-.01-.36.1-.48.1-.1.23-.26.35-.39.12-.13.16-.23.24-.38.08-.16.04-.29-.02-.41-.06-.12-.51-1.23-.7-1.68-.18-.44-.37-.38-.51-.39l-.43-.01c-.15 0-.39.06-.6.29-.21.23-.79.77-.79 1.87s.81 2.17.92 2.32c.12.16 1.58 2.42 3.82 3.39.53.23.95.36 1.27.46.53.17 1.01.15 1.39.09.42-.06 1.35-.55 1.54-1.08.19-.53.19-.99.13-1.08-.06-.09-.21-.15-.44-.27z"/>
+
+</svg>
+
+</a>
+
+<a 
+href="https://www.instagram.com/indianlasertechnik/" 
+target="_blank"
+class="fixed bottom-40 right-8 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-4 rounded-full shadow-lg hover:scale-110 transition duration-300">
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+width="28" 
+height="28" 
+viewBox="0 0 24 24" 
+fill="white">
+
+<path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5C18.216 4 20 5.784 20 7.75v8.5c0 1.966-1.784 3.75-3.75 3.75h-8.5C5.784 20 4 18.216 4 16.25v-8.5C4 5.784 5.784 4 7.75 4zm8.75 1a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+
+</svg>
+
+</a>
+
+<footer class="text-center py-6 text-white-500">
+
+<p>Basement, Shopt No 14, Aniket Prashant Plaza</p>
+<p>Rajarshri Shahu Maharaj Flyover</p>
+<p>Midc Chinchwad, Gurukripa Automobile</p>
+<p>Pimpri Chinchwad, Pune - 411019, Maharashtra, India</p>    
+
+© 2026 Indian Laser Technik
+
+</footer>
+
+<!-- FLOATING YOUTUBE BUTTON -->
+
+<a 
+href="https://www.youtube.com/channel/UCuC55fURuP-wX7i-g95PK6A"
+target="_blank"
+class="fixed bottom-24 right-8 flex items-center justify-center w-14 h-14 bg-red-600 rounded-full shadow-xl hover:scale-110 transition">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+fill="white"
+viewBox="0 0 24 24"
+width="28"
+height="28">
+
+<path d="M23.5 6.2s-.2-1.7-.8-2.5c-.8-1-1.7-1-2.1-1.1C17.5 2.3 12 2.3 12 2.3h0s-5.5 0-8.6.3c-.4 0-1.3.1-2.1 1.1C.7 4.5.5 6.2.5 6.2S.3 8.1.3 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.7.8 2.5c.8 1 1.9 1 2.4 1.1 1.7.2 7.3.3 7.3.3s5.5 0 8.6-.3c.4 0 1.3-.1 2.1-1.1.6-.8.8-2.5.8-2.5s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.7 14.6V7.9l6.4 3.3-6.4 3.4z"/>
+
+</svg>
+
+</a>
+<script>
+document.querySelector("form").addEventListener("submit", function(){
+setTimeout(function(){
+alert("Thank you! Your enquiry has been submitted.");
+}, 1000);
+});
+</script>
+
+<script>
+
+let currentSlide = 0;
+const slider = document.getElementById("slider");
+const slides = slider.children;
+const totalSlides = slides.length;
+
+function updateSlide() {
+slider.style.transform = "translateX(-" + (currentSlide * 100) + "%)";
+}
+
+function nextSlide() {
+if (currentSlide < totalSlides - 1) {
+currentSlide++;
+} else {
+currentSlide = 0;
+}
+updateSlide();
+}
+
+function prevSlide() {
+if (currentSlide > 0) {
+currentSlide--;
+} else {
+currentSlide = totalSlides - 1;
+}
+updateSlide();
+}
+
+</script>
+
+</body>
+</html>
